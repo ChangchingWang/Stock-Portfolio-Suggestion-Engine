@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+
+  <style>
+    #resultTable, #resultTable th, #resultTable td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  
+<h1>Dashboard</h1>
+
+<h2>Total Value</h2>
+<div id="totalValueContainer">
+  <span id="totalValueDesc">Current Total Value:</span>
+  <span id="totalValueNow"> {{ totalValueNow }} </span>
+</div>
+
+<h2>Divided Value</h2>
+<div id="amountDividContainer">
+  <table id="amountDividTable">
+    <tr>
+      <th>Stock Name</th>
+      <th>divided Value</th>
+    </tr>
+    <tr>
+      <td> {{ stock1Symbol }} </td>
+      <td> {{ stock1Amount }} </td>
+    </tr>
+    <tr>
+      <td> {{ stock2Symbol }} </td>
+      <td> {{ stock2Amount }} </td>
+    </tr>
+    <tr>
+      <td> {{ stock3Symbol }} </td>
+      <td> {{ stock3Amount }} </td>
+    </tr>
+  </table>
+</div>
+
+<h2>weekly trend of portfolio value</h2>
+<div id="resultContainer">
+  <table id="resultTable">
+    <tr>
+      <th>Date</th>
+      <td> {{ date1 }} </td>
+      <td> {{ date2 }} </td>
+      <td> {{ date3 }} </td>
+      <td> {{ date4 }} </td>
+      <td> {{ date5 }} </td>
+    </tr>
+    <tr>
+      <th>Overall Value</th>
+      <td> {{ date1Total }} </td>
+      <td> {{ date2Total }} </td>
+      <td> {{ date3Total }} </td>
+      <td> {{ date4Total }} </td>
+      <td> {{ date5Total }} </td>
+    </tr>
+  </table>
+</div>
+  
+</body>
+</html>

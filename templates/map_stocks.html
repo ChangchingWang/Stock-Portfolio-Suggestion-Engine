@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stocks Assignment</title>
+</head>
+<body>
+  <h1>Dicide your investment amount</h1>
+  <div id="stocksContainer">
+    <form id="form1" name="form1" action="calculate" method="post">
+      <div class="row">
+        <label for="stock1">{{ stock1.name }}</label>
+        <input type="text" id="stock1Amount" name="stock1Amount" value="{{ stock1.amount }}">
+        <input type="hidden" id="stock1Symbol" name="stock1Symbol" value="{{ stock1.symbol }}">
+      </div>
+      <div class="row">
+        <label for="stock2">{{ stock2.name }}</label>
+        <input type="text" id="stock2Amount" name="stock2Amount" value="{{ stock2.amount }}">
+        <input type="hidden" id="stock2Symbol" name="stock2Symbol" value="{{ stock2.symbol }}">
+      </div>
+      <div class="row">
+        <label for="stock3">{{ stock3.name }}</label>
+        <input type="text" id="stock3Amount" name="stock3Amount" value="{{ stock3.amount }}">
+        <input type="hidden" id="stock3Symbol" name="stock3Symbol" value="{{ stock3.symbol }}">
+      </div>
+    </form>
+  </div>
+
+  <div id="btnContainer">
+    <button id="nextBtn" type="submit" form="form1" value="next">Next</button>
+  </div>
+</body>
+</html>
