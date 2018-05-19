@@ -1509,7 +1509,7 @@
                             <span class="">
                                 <label for="stock1">{{ stock1.name }}</label>
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <input type="text" id="stock1Amount" name="stock1Amount" value="{{ stock1.amount }}">
+                                <input type="number" id="stock1Amount" name="stock1Amount" value="{{ stock1.amount }}" required>
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 <input type="hidden" id="stock1Symbol" name="stock1Symbol" value="{{ stock1.symbol }}">
                             </span>
@@ -1517,14 +1517,14 @@
                             <span class="">
                                 <label for="stock2">{{ stock2.name }}</label>
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <input type="text" id="stock2Amount" name="stock2Amount" value="{{ stock2.amount }}">
+                                <input type="number" id="stock2Amount" name="stock2Amount" value="{{ stock2.amount }}" required>
                                 <input type="hidden" id="stock2Symbol" name="stock2Symbol" value="{{ stock2.symbol }}">
                             </span>
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             <span class="">
                                 <label for="stock3">{{ stock3.name }}</label>
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <input type="text" id="stock3Amount" name="stock3Amount" value="{{ stock3.amount }}">
+                                <input type="number" id="stock3Amount" name="stock3Amount" value="{{ stock3.amount }}" required>
                                 <input type="hidden" id="stock3Symbol" name="stock3Symbol" value="{{ stock3.symbol }}">
                             </span>
                         </form>
